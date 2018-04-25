@@ -7,7 +7,7 @@ function disp( s )
 }
 
 //------------------
-//登録する
+//会員クラス
 class Kaiinn
 {
 	//コンストラクタ　(new 演算子実行時に呼ばれる)
@@ -30,6 +30,7 @@ class Kaiinn
 }
 
 //------------------
+//フォームから値を取得
 function getFromForm()
 {
 	//会員クラスからインスタンスを作るための値を取得
@@ -44,15 +45,19 @@ function getFromForm()
 }
 
 //------------------
+//フォームをクリア
 function clearForm()
 {
 	document.enshuForm4.textInput1.value =　"";
 	document.enshuForm4.textInput2.value =　"";
 }
 
-//------------------
+//-----------------
+//会員データベース
 kaiinDB={};
 
+//-------------------------------
+//会員をDBに登録
 function registKaiin( kaiin )
 {
 	//会員番号をキーにして、会員のインスタンスをオブジェクトに登録する
@@ -60,6 +65,7 @@ function registKaiin( kaiin )
 }
 //------------------
 //ブラウザからキックされるメソッド
+//登録機能
 function regist()
 {
 	//フォームからデータを取得し会員クラスのインスタンスを生成する
@@ -78,6 +84,7 @@ function regist()
 
 //------------------
 //ブラウザからキックされるメソッド
+//リストを出力する機能
 function getAllKainnList()
 {
 	//会員DBから値のリストを取得する
@@ -138,6 +145,7 @@ function getKaiinStr( no )
 }
 
 //ブラウザからキックされるメソッド
+//検索機能
 function serch()
 {
 	cls();
