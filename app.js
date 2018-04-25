@@ -38,6 +38,7 @@ function getFromForm()
 	let name 		= document.enshuForm4.textInput2.value;
 	let registDate 	= new Date();
 
+
 	//会員クラスからインスタンス生成
 	let kaiinn = new Kaiinn( no, name,	registDate );
 
