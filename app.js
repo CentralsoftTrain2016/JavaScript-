@@ -125,7 +125,7 @@ function getKaiinStr( no )
 {
 	let kaiin = kaiinDB[ no ];
 	if( kaiin == null )
-		return "会員番号：" + no + " は登録されていません。"
+		return "会員番号：" + no + "は登録されていません。"
 
 	/* クラスを使わない場合の実装
 	return( 
