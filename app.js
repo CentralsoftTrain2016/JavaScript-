@@ -15,7 +15,7 @@ class Kaiinn
 	{
 		this._kaiinNo 	= kaiinNo;
 		this.name 		= name;
-		this.registDate = registDate;
+		this.registDate = registDate; //登録日時
 	}
 
 	//保持しているデータを文字列化して出力する
